@@ -3,7 +3,8 @@
     "type": "textInput",
     "label": "Driver Name",
     "path": "driver.name",
-    "defaultValue": "Peter Nolan"
+    "defaultValue": "Peter Nolan",
+    "required": true
   },
   {
     "type": "textInput",
@@ -32,5 +33,41 @@
     "min": 0,
     "max": 1000000,
     "currencies": ["EUR", "USD", "GBP"]
+  },
+  {
+    "type": "textInput",
+    "label": "Insurance Provider",
+    "path": "vehicle.insurance",
+    "condition": {
+      "path": "vehicle.type",
+      "equals": "Car"
+    }
+  },
+  {
+    "type": "textInput",
+    "label": "Medical Disclosure",
+    "path": "driver.medical",
+    "condition": {
+      "path": "driver.age",
+      "greaterThan": 70
+    }
+  },
+  {
+    "type": "textInput",
+    "label": "Boot Size",
+    "path": "vehicle.bootSize",
+    "condition": {
+      "path": "vehicle.type",
+      "notEquals": "Motorbike"
+    }
+  },
+  {
+    "type": "textInput",
+    "label": "Load Type",
+    "path": "vehicle.loadType",
+    "condition": {
+      "path": "vehicle.type",
+      "in": ["Van", "Truck"]
+    }
   }
 ]

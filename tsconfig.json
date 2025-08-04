@@ -9,8 +9,9 @@
         "esModuleInterop": true,
         "lib": [
             "dom",
-            "es2015"
+            "es2016"
         ],
-        "jsx": "react-jsx"
+        "jsx": "react-jsx",
+        "types": ["react", "react-dom"]  // 👈 Add this line
     }
 }

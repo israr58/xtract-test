@@ -9,7 +9,7 @@ type StaticFormProps = {
   object: MyObject;
 };
 
-const StaticForm = ({ object }: StaticFormProps): JSX.Element => {
+const StaticForm = ({ object }: StaticFormProps): React.JSX.Element => {
   const [myObject, setMyObject] = useState<MyObject>(object);
   const [savedObject, setSavedObject] = useState<MyObject>();
 

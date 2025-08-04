@@ -2,3 +2,32 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.form-card {
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.output-card {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.output-pre {
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
